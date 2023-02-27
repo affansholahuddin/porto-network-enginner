@@ -1,0 +1,288 @@
+/* root */
+:root{
+    --darkGray: #34364a;
+    --gray: #4a5568;
+}
+
+/* Header - Navigation */
+.navbar{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+    padding: 0 20%;
+    height: 70px;
+    width: 60%;
+    top: 0;
+    
+}
+
+.navbar > img{
+    height: 60px;
+}
+.navbar > .navbar-menu > a{
+    padding: 0px 30px 10px 30px;
+}
+
+.navbar-menu > a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-menu > a:active{
+    color: black;
+}
+
+.navbar-menu > a:visited{
+    color: black;
+}
+
+.navbar-menu > a:hover{
+    color: gray;
+}
+
+/* Main - Content */
+main{
+    margin-top: 70px;
+    width: 100%;
+}
+
+/* Section Hero */
+.hero-container{
+    display: flex;
+    padding: 0 20%;
+    height: 450px;
+    margin: 70px 0;
+}
+
+.hero-container > div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-container h1{
+    font-weight: 700;
+    font-size: 40px;
+    width: 500px;
+    margin: 30px 0;
+}
+
+.hero-container p{
+    width: 750px;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--gray);
+    text-indent: 8%;
+    padding-bottom: 30px;
+    
+}
+
+.hero-container strong{
+    font-weight: 700;
+}
+
+.hero-container > img{
+    width: 25%;
+    align-self: center;
+    padding: 0px 30px 0px 0px;
+}
+
+.my-cv{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.my-cv:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+hr{
+    width: 50%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Section Projects */
+.project-container{
+    height: auto;
+    margin: 70px 0;
+    padding: 50px 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-container h2{
+    color: var(--darkGray);
+    font-weight: 700;
+    font-size: 30px;
+    width: 360px;
+    margin: 30px 0;
+}
+
+.project-gallery{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0px 0px 0px 30px;
+    gap: 30px;
+}
+
+.project-gallery img {
+    height: 200px;
+}
+
+.project-gallery h3{
+    width: 200px;
+    color: var(--gray);
+    font-weight:100;
+    font-size: 22px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Section Certificates */
+.certificate-container{
+    height: auto;
+    margin: 70px 0;
+    padding: 50px 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.certificate-container h2{
+    color: var(--darkGray);
+    font-weight: 700;
+    font-size: 30px;
+    width: 360px;
+    margin: 30px 0;
+}
+
+.certificate-gallery{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0px 0px 0px 30px;
+    gap: 30px;
+}
+
+.certificate-gallery img {
+    height: 200px;
+}
+
+.certificate-gallery h3{
+    width: 200px;
+    color: var(--gray);
+    font-weight:100;
+    font-size: 22px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Section Contact */
+.contact-container{
+    height: auto;
+    margin: 70px 0;
+    padding: 50px 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container h2{
+    color: var(--darkGray);
+    font-weight: 700;
+    font-size: 30px;
+    width: 360px;
+    margin: 30px 0;
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    
+}
+
+.contact-form > p{
+    width: 80%;
+    color: var(--gray);
+    font-weight:100;
+    font-size: 22px;
+}
+
+.contact-form > form {
+    width: 20%;
+}
+.contact-form > form > button{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 0px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.contact-form > form > button:disabled{
+    pointer-events: none;
+}
+
+.contact-form > form > button:hover{
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.contact-form > form > button:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Footer */
+footer{
+    padding: 0 10%;
+    height: 100px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer > p{
+    padding: 40px 0;
+}
